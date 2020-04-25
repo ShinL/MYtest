@@ -1,0 +1,42 @@
+@import '~antd/dist/antd.css';
+html, body, #root {
+	height: 100%;
+	margin: 0;
+}
+.main-containe {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	.top {
+		height: 60px;
+		background: #9dff00;
+		width: 100%;
+	}
+	.left {
+		width: 200px;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		bottom: 0;
+		background: #008dff;
+	}
+	.content {
+		position: absolute;
+		left: 200px;
+		bottom: 0;
+		width: auto;
+		right: 0;
+		top: 60px;
+		border: 1px solid #ccc;
+		overflow: auto;
+		padding: 10px;
+		.description {
+			width: 300px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			text-overflow: -o-ellipsis-lastline;
+
+		}
+	}
+}
